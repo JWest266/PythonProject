@@ -157,6 +157,13 @@ while True:
             else:
                 print("Invalid option.")
 
+    elif choice == "4":
+        PiD = input("Which project do you want to print: ")
+        if PiD in Projects:
+            print(Projects[PiD])
+        if PiD not in Projects:
+            print("")
+
 
     elif choice == "5":
         print(Projects)
